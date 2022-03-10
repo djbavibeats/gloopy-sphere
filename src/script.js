@@ -97,6 +97,10 @@ const tick = () =>
 {
     const elapsedTime = clock.getElapsedTime()
 
+    // Update geometry
+    
+    sphereMesh.rotation.x += Math.PI * 0.00025
+    sphereMesh.rotation.y += Math.PI * 0.00025
     // Update material
     material.uniforms.uTime.value = elapsedTime
 
